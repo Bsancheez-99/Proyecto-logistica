@@ -1,3 +1,31 @@
+/* Configuración para Celulares (Pantallas menores a 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Letra un poco más pequeña */
+  }
+  
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column; /* Apila los elementos uno abajo del otro */
+    padding: 10px;
+  }
+
+  /* Ajusta tus racks o tablas aquí */
+  .rack {
+    width: 100%; /* Que ocupen todo el ancho del celular */
+  }
+}
+
+/* Configuración para Tablets (Entre 601px y 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .rack {
+    width: 50%; /* Dos racks por fila en tablet */
+  }
+}
+
+
+
+
 body{
 font-family: Arial;
 background:#f4f4f4;
