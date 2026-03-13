@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistema de Depósito</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Depósito</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<h1>Sistema de Depósito</h1>
-
-<select id="selectorRack">
-<option value="rack1">Rack 1</option>
-<option value="rack2">Rack 2</option>
-<option value="rack3">Rack 3</option>
-<option value="rack4">Rack 4</option>
-</select>
-
-<div class="estadisticas">
-
-<div class="card">
-<h3>Posiciones Totales</h3>
-<p id="totalPos">0</p>
-</div>
-
-<div class="card">
-<h3>Ocupadas</h3>
-<p id="ocupadas">0</p>
-</div>
-
-<div class="card">
-<h3>Libres</h3>
-<p id="libres">0</p>
-</div>
-
-</div>
-
-<div class="rack" id="rack"></div>
-
-<div class="info" id="info">
-Haz click en una posición
-</div>
-
-<script src="index.js"></script>
-
+    <h1>Sistema de Depósito</h1>
+    <select id="selectorRack">
+        <option value="rack1">Rack 1</option>
+        <option value="rack2">Rack 2</option>
+        <option value="rack3">Rack 3</option>
+        <option value="rack4">Rack 4</option>
+    </select>
+    <div class="estadisticas">
+        <div class="card">
+            <h3>Posiciones Totales</h3>
+            <p id="totalPos">0</p>
+        </div>
+        <div class="card">
+            <h3>Ocupadas</h3>
+            <p id="ocupadas">0</p>
+        </div>
+        <div class="card">
+            <h3>Libres</h3>
+            <p id="libres">0</p>
+        </div>
+    </div>
+    <div class="rack-container">
+        <div class="rack" id="rack"></div>
+    </div>
+    <div class="info" id="info">
+        Haz click en una posición
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

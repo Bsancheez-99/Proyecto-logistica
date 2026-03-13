@@ -1,29 +1,63 @@
-/* Configuración para Celulares (Pantallas menores a 600px) */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px; /* Letra un poco más pequeña */
-  }
-  
-  .contenedor-principal {
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
     display: flex;
-    flex-direction: column; /* Apila los elementos uno abajo del otro */
-    padding: 10px;
-  }
-
-  /* Ajusta tus racks o tablas aquí */
-  .rack {
-    width: 100%; /* Que ocupen todo el ancho del celular */
-  }
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Configuración para Tablets (Entre 601px y 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .rack {
-    width: 50%; /* Dos racks por fila en tablet */
-  }
+.estadisticas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
 }
 
+.card {
+    flex: 1 1 150px;
+    min-width: 120px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
 
+.rack-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.rack {
+    display: grid;
+    gap: 5px;
+    margin: 20px 0;
+    min-width: min-content;
+}
+
+.info {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    text-align: center;
+    background: #eee;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .card h3 {
+        font-size: 0.9rem;
+    }
+}
 
 
 body{
