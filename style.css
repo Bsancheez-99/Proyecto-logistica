@@ -1,0 +1,83 @@
+body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+select{
+margin-top:20px;
+padding:8px;
+font-size:16px;
+}
+
+.estadisticas{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+border:1px solid #ccc;
+padding:15px;
+width:160px;
+}
+
+.card p{
+font-size:26px;
+font-weight:bold;
+}
+
+.rack{
+display:grid;
+gap:5px;
+justify-content:center;
+margin-top:30px;
+}
+
+.celda{
+border:1px solid #333;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:11px;
+font-weight:bold;
+text-align:center;
+padding:5px;
+cursor:pointer;
+}
+
+/* COLORES PRODUCTOS */
+
+.cardio{ background:#e53935; color:white; }
+.renal{ background:#fb8c00; color:white; }
+.sensibilidad{ background:#64ffda; color:black; }
+.gastro{ background:#43a047; color:white; }
+.articular{ background:#1e88e5; color:white; }
+.obesidad{ background:#ff80ab; color:black; }
+.urinario{ background:#ffd600; color:black; }
+
+/* PICKING */
+
+.picking{
+background:#2e7d32;
+color:white;
+}
+
+/* PULMON */
+
+.pulmon{
+background:#bdbdbd;
+color:black;
+}
+
+.info{
+margin-top:30px;
+padding:20px;
+background:white;
+border:1px solid #ccc;
+width:500px;
+margin-left:auto;
+margin-right:auto;
+}
