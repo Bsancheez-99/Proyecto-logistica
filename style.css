@@ -285,3 +285,12 @@ padding:10px;
 }
 
 }
+
+.rack{
+overflow-x:auto;
+width:100%;
+}
+
+.rack table{
+min-width:700px;
+}
