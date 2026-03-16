@@ -1,39 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Depósito</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<title>Sistema de Racks Logísticos</title>
+
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <h1>Sistema de Depósito</h1>
-    <select id="selectorRack">
-        <option value="rack1">Rack 1</option>
-        <option value="rack2">Rack 2</option>
-        <option value="rack3">Rack 3</option>
-        <option value="rack4">Rack 4</option>
-    </select>
-    <div class="estadisticas">
-        <div class="card">
-            <h3>Posiciones Totales</h3>
-            <p id="totalPos">0</p>
-        </div>
-        <div class="card">
-            <h3>Ocupadas</h3>
-            <p id="ocupadas">0</p>
-        </div>
-        <div class="card">
-            <h3>Libres</h3>
-            <p id="libres">0</p>
-        </div>
-    </div>
-    <div class="rack-container">
-        <div class="rack" id="rack"></div>
-    </div>
-    <div class="info" id="info">
-        Haz click en una posición
-    </div>
-    <script src="index.js"></script>
+
+<h1>Sistema de Racks del Depósito</h1>
+
+
+<div class="controles">
+
+<label>Seleccionar Rack</label>
+
+<select id="selectorRack">
+
+<option value="rack1">Rack 1</option>
+<option value="rack2">Rack 2</option>
+<option value="rack3">Rack 3</option>
+<option value="rack4">Rack 4</option>
+
+</select>
+
+
+<label>Buscar Producto</label>
+
+<select id="selectorProducto">
+
+<option value="">Todos</option>
+<option value="cardio">Cardio</option>
+<option value="renal">Renal</option>
+<option value="sensibilidad">Sensibilidad</option>
+<option value="gastro">Gastro</option>
+<option value="articular">Articular</option>
+<option value="obesidad">Obesidad</option>
+<option value="urinario">Urinario</option>
+
+</select>
+<label>Buscar Posición</label>
+
+<input type="text" id="buscarPosicion" placeholder="Ej: 072">
+
+<button onclick="buscarPosicion()">Buscar</button>
+
+</div>
+
+
+<div class="estadisticas">
+
+<div class="card">
+
+<h3>Posiciones Totales</h3>
+<p id="totalPos">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Ocupadas</h3>
+<p id="ocupadas">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Libres</h3>
+<p id="libres">0</p>
+
+</div>
+
+</div>
+
+
+<h2 id="tituloRack">Rack</h2>
+
+<div class="rack" id="rack"></div>
+
+
+<div class="info" id="info">
+
+Haz click en una posición
+
+</div>
+
+
+<script src="index.js"></script>
+
 </body>
+
 </html>
